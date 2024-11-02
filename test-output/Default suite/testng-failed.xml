@@ -3,17 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGClass.Addtocart_Test">
+      <class name="TestNG_classes.Login">
         <methods>
+          <include name="passwordenter"/>
+          <include name="loginbutton"/>
+          <include name="click_AddtoCart"/>
           <include name="afterTest"/>
           <include name="beforeClass"/>
+          <include name="loginpage"/>
           <include name="itemsconfirmation"/>
           <include name="beforeTest"/>
           <include name="afterClass"/>
-          <include name="addtocart"/>
           <include name="confirmationmsg"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- TestNGClass.Addtocart_Test -->
+      </class> <!-- TestNG_classes.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

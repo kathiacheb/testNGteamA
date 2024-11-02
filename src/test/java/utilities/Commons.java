@@ -53,12 +53,17 @@ if(browsername.equalsIgnoreCase("chrome")) {
 	WebDriverManager.chromedriver().setup();
 	log.info("launched browser");
 
-    driver= new ChromeDriver();
+    try {
+	driver= new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     driver.get(urlname);
     driver.manage().window().maximize();
     log.info("maximize window");
     Thread.sleep(2000);
+	} catch (Exception e) {
+		// TODO: handle exception
+		System.out.println("chrome opened");
+	} 
 }
 
 else if (browsername.equalsIgnoreCase("edge")) {
@@ -67,12 +72,18 @@ else if (browsername.equalsIgnoreCase("edge")) {
 	WebDriverManager.edgedriver().setup();
 	log.info("launch edge browser");
 
+	try {
 	driver= new EdgeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	driver.get(urlname);
 	driver.manage().window().maximize();
 	log.info("maximize window");
 	Thread.sleep(2000);
+	 
+	} catch (Exception e) {
+		// TODO: handle exception
+		System.out.println("edge opened");
+	} 
 }
 }
 
@@ -129,6 +140,7 @@ public void screenshot(String foldername) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	log.info("screenshot captured..");
 }
 public String Captureforss (String foldername) {
 	
@@ -140,6 +152,7 @@ public String Captureforss (String foldername) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	log.info("screenshot captured for extent Report");
 	//we need to return the absolute part first 
 	String absolutepath = destinationpath.getAbsolutePath();
 	//we have to return it since we have a return method
@@ -202,7 +215,13 @@ public boolean isElementDisplayed(WebElement locator) {
    
 
 public void teardown() {
-	driver.close();
+	
+	try {
+		driver.close();
+	} catch (Exception e) {
+		System.out.println("Driver is closed");
+	}
+	
 
 }
 }

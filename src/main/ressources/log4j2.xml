@@ -12,11 +12,11 @@
 	     </File>
 		  </Appenders> 
 		   <Loggers>
-		 <Logger name="Logger_pack" level="info" additivity="true">
+		 <Logger name="Login" level="info" additivity="true">
                   <AppenderRef ref="Console"/>
 		  </Logger>
 			   <Root level="info">
-				   <AppenderRef ref="File"/>
+				   <AppenderRef ref="Console"/>
 		 </Root> 
 		  </Loggers>
 		  </Configuration>

@@ -55,12 +55,19 @@ public class javascriptutilities {
        
        
        public static void drawborder(WebElement element) {
+    	   
+    	   try {
+				Thread.sleep(700);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
        	JavascriptExecutor js = (JavascriptExecutor)driver;	
    		js.executeScript("arguments[0].style.border='3px solid green'", element);
    		
    	
    		try {
-				Thread.sleep(2000);
+				Thread.sleep(700);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
