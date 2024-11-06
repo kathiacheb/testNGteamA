@@ -8,6 +8,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.model.Report;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class utilities extends Commons{
 
@@ -27,13 +28,12 @@ public class utilities extends Commons{
 
 	
 	@Parameters({"browser","website"})
-	  @BeforeClass	
-
-	  public void beforeClass(@Optional("chrome")String browsername, @Optional("http://tutorialsninja.com/demo/index.php?route=common/home") String urlname) throws InterruptedException {
-		
+	@BeforeClass	
+	 public void beforeClass(String browsername, String urlname ) throws InterruptedException {
+	 // public void beforeClass(@Optional("chrome") String browsername,@Optional("https://tutorialsninja.com/demo/index.php?route=account/login") String urlname) throws InterruptedException {
+	
 	    browser(browsername,urlname);
-	  
-	  
+
 	  }                   
 
 	  @AfterClass

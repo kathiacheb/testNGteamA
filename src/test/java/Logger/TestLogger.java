@@ -22,10 +22,13 @@ public static Logger log;
     	driver=new ChromeDriver();
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     	driver.get("https://tutorialsninja.com/demo/index.php?route=common/home");
+    	driver.manage().window().maximize();
     	log.info("logged into tutorialsninja");
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
     	     
     	 try {
-    		  WebElement text= driver.findElement(By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[7]"));
+    		  WebElement text= driver.findElement(By.xpath("//span[text()='Shopping Cart']"));
     		  System.out.println(text);
     	  }
     		  catch (Exception e) {
