@@ -41,7 +41,9 @@ public class Commons extends javascriptutilities {
      public Logger log= LogManager.getLogger(Commons.class);
 
      public ExtentReports extent = new ExtentReports();
-	 public  ExtentSparkReporter spark = new ExtentSparkReporter("Results/KathiaExtentReport"+System.currentTimeMillis()+".html");
+	// public  ExtentSparkReporter spark = new ExtentSparkReporter("Results/KathiaExtentReport"+System.currentTimeMillis()+".html");
+	 public  ExtentSparkReporter spark = new ExtentSparkReporter("jenkins_extentReport"+System.currentTimeMillis()+".html");
+
 	 public ExtentTest test;
 
 	 
