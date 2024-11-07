@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -39,12 +40,12 @@ public class Commons extends javascriptutilities {
 	 public WebDriver driver;
      String ud= System.getProperty("user.dir");
      public Logger log= LogManager.getLogger(Commons.class);
-
+     public ITestResult result; 
+     
      public ExtentReports extent = new ExtentReports();
-	// public  ExtentSparkReporter spark = new ExtentSparkReporter("Results/KathiaExtentReport"+System.currentTimeMillis()+".html");
+	 //public  ExtentSparkReporter spark = new ExtentSparkReporter("Results/KathiaExtentReport"+System.currentTimeMillis()+".html");
 	 public  ExtentSparkReporter spark = new ExtentSparkReporter("jenkins_extentReport"+System.currentTimeMillis()+".html");
-
-	 public ExtentTest test;
+     public ExtentTest test;
 
 	 
 
@@ -122,6 +123,8 @@ public void Verifypagetitle(String expectedtitle) {
 
 public void configreport() {
 	extent.attachReporter(spark);
+	
+	//add system information/environme
 	extent.setSystemInfo("machine", "pc");
 	extent.setSystemInfo("Os", "windows");   //operationnal system
 	extent.setSystemInfo("browser", "chrome");
@@ -130,6 +133,7 @@ public void configreport() {
 	//look change
 	spark.config().setTheme(Theme.DARK); //to change the backround
 	spark.config().setDocumentTitle("kathia's report"); // to change the name of the report
+    spark.config().setReportName("Myntra test report");
 }
 
 public void screenshot(String foldername) {

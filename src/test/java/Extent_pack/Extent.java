@@ -24,18 +24,22 @@ public class Extent extends utilities{
 	  @Test (priority = 1)
 	   public void login() {
 			test= extent.createTest("login").assignAuthor("kathia").assignCategory("smoke").assignDevice("windows");
-		test.pass("logged in succesfully ");
+			test.info("user is logged in succesfully ");
+
+			test.pass("logged in succesfully ");
 		  } 
 	  
 	  @Test (priority = 2)
 	  public void search() {
 		  test= extent.createTest("search").assignAuthor("kathia").assignCategory("smoke").assignDevice("windows");
+		  test.info("search started");
 		  test.pass("search for mac succeded");
 
 	  }  
   @Test (priority = 3)
    public void addtocart() {
 		test= extent.createTest("addtocart").assignAuthor("kathia").assignCategory("smoke").assignDevice("windows");
+	test.info("add the product to the cart");
 	test.pass("the product was added to the cart ");
 	test.log(Status.PASS, MarkupHelper.createLabel("addtocart btn clicked", ExtentColor.GREEN));
 
@@ -45,13 +49,15 @@ public class Extent extends utilities{
   @Test (priority = 4)
   public void confirmationmsg() {
 		test= extent.createTest("confirmation_message").assignAuthor("kathia").assignCategory("smoke").assignDevice("windows");
-	 test.pass("confirmation message displyed");
+	    test.info("the confirmation is displayed");
+		test.pass("confirmation message displyed");
   }
   
   @Test (priority = 5)
   public void itemsconfirmation() {
 		test= extent.createTest("itemsconfirmation").assignAuthor("kathia").assignCategory("smoke").assignDevice("windows");
-	 test.pass(" shopping cart increased by one");
+	    test.info("shopping cart encreased");
+		test.pass(" shopping cart increased by one");
   }
   
 	/*

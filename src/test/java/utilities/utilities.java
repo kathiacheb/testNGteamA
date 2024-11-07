@@ -37,7 +37,8 @@ public class utilities extends Commons{
 	  }                   
 
 	  @AfterClass
-	  public void afterClass() {
+	  public void afterClass() throws InterruptedException {
+		  Thread.sleep(2000);
 		  log.info("window closed");
 		  teardown();
 
