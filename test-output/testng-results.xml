@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T13:04:14 EST" name="Suite" finished-at="2024-11-06T13:04:34 EST" duration-ms="19298">
+  <suite started-at="2024-11-07T19:19:24 EST" name="Suite" finished-at="2024-11-07T19:19:37 EST" duration-ms="13090">
     <groups>
     </groups>
-    <test started-at="2024-11-06T13:04:14 EST" name="Test" finished-at="2024-11-06T13:04:34 EST" duration-ms="19298">
-      <class name="TestNG_classes.Login">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:14 EST" name="beforeTest" finished-at="2024-11-06T13:04:15 EST" duration-ms="152" status="PASS">
+    <test started-at="2024-11-07T19:19:24 EST" name="Test" finished-at="2024-11-07T19:19:37 EST" duration-ms="13090">
+      <class name="TestNG_classes.CheckoutTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:24 EST" name="beforeTest" finished-at="2024-11-07T19:19:24 EST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:15 EST" name="beforeClass" finished-at="2024-11-06T13:04:21 EST" duration-ms="6457" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:24 EST" name="beforeClass" finished-at="2024-11-07T19:19:29 EST" duration-ms="5062" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,43 +27,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="loginpage()[pri:1, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:21 EST" name="loginpage" finished-at="2024-11-06T13:04:22 EST" duration-ms="698" status="PASS">
+        <test-method signature="LoginToMyAccout()[pri:1, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:29 EST" name="LoginToMyAccout" finished-at="2024-11-07T19:19:31 EST" duration-ms="1526" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginpage -->
-        <test-method signature="passwordenter()[pri:2, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:22 EST" name="passwordenter" finished-at="2024-11-06T13:04:22 EST" duration-ms="424" status="PASS">
+        </test-method> <!-- LoginToMyAccout -->
+        <test-method signature="click_shopping_card()[pri:2, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:31 EST" name="click_shopping_card" finished-at="2024-11-07T19:19:32 EST" duration-ms="1633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- passwordenter -->
-        <test-method signature="loginbutton()[pri:3, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:22 EST" name="loginbutton" finished-at="2024-11-06T13:04:25 EST" duration-ms="2458" status="PASS">
+        </test-method> <!-- click_shopping_card -->
+        <test-method signature="click_checkout()[pri:3, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:32 EST" name="click_checkout" finished-at="2024-11-07T19:19:34 EST" duration-ms="1999" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginbutton -->
-        <test-method signature="search()[pri:4, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:25 EST" name="search" finished-at="2024-11-06T13:04:27 EST" duration-ms="2516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method signature="click_AddtoCart()[pri:5, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:27 EST" name="click_AddtoCart" finished-at="2024-11-06T13:04:29 EST" duration-ms="2271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_AddtoCart -->
-        <test-method signature="confirmationmsg()[pri:6, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:29 EST" name="confirmationmsg" finished-at="2024-11-06T13:04:31 EST" duration-ms="1276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmationmsg -->
-        <test-method signature="itemsconfirmation()[pri:7, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:31 EST" name="itemsconfirmation" finished-at="2024-11-06T13:04:32 EST" duration-ms="1521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemsconfirmation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:32 EST" name="afterClass" finished-at="2024-11-06T13:04:33 EST" duration-ms="276" status="PASS">
+        </test-method> <!-- click_checkout -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:34 EST" name="afterClass" finished-at="2024-11-07T19:19:37 EST" duration-ms="2155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG_classes.Login@5cc5b667]" started-at="2024-11-06T13:04:33 EST" name="afterTest" finished-at="2024-11-06T13:04:34 EST" duration-ms="1187" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG_classes.CheckoutTest@5398edd0]" started-at="2024-11-07T19:19:37 EST" name="afterTest" finished-at="2024-11-07T19:19:37 EST" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- TestNG_classes.Login -->
+      </class> <!-- TestNG_classes.CheckoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
